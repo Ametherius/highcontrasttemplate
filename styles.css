@@ -51,3 +51,16 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.btn-primary {
+    background-color: #7A7A7A;
+    color: #FFF;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    color: white;
+}
