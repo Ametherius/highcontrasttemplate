@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    color: black;
+    background-image: linear-gradient(to bottom right, #FFFFFF, #7A7A7A);
+}
+
+#home {
+    background: url('./images/cool-background.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#title {
+    text-shadow: 2px 2px 2px black;
+}
+
+.light-hr {
+    border: none;
+    height: 2px;
+    color: black;
+    background-color: black;
+}
+
+.dark-hr {
+    border: none;
+    border-radius: 50%;
+    height: 2px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.card-body {
+    background-color: #464646;
+}
+
+#pricing {
+    background-image: linear-gradient(to bottom right, #FFFFFF, #7a7a7a);
+}
+
+#fixed {
+    background: url('./images/cool-background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
