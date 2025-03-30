@@ -46,7 +46,7 @@ html, body {
 }
 
 #fixed {
-    background: url('./images/cool-background.png');
+    background-image: url('./images/cool-background.png');
     background-attachment: fixed;
     -webkit-background-attachment: fixed;
     background-size: cover;
@@ -78,7 +78,7 @@ html, body {
     }
 
     #fixed {
-        background: url('./images/phonebg.png');
+        background-image: url('./images/tabletbg.png');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
