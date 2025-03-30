@@ -12,10 +12,10 @@ html, body {
 
 #home {
     background-image: url('./images/cool-background.png');
-    background-attachment: fixed;
-    background-position: center;
+    background-attachment: fixed, local;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 #title {
@@ -71,11 +71,7 @@ html, body {
     color: white;
 }
 
-@media (max-width: 768px){
-    body {
-        width: 100%;
-        height: 100%;
-    }
+/* @media (max-width: 768px){
 
     #fixed {
         background-image: url('./images/tabletbg.png');
@@ -96,13 +92,9 @@ html, body {
         background-repeat: no-repeat;
         -webkit-background-repeat: no-repeat;
     }
-}
+} */
 
-@media (max-width: 576px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
+/* @media (max-width: 576px) {
 
     #home {
         background-image: url('./images/phonebg.png');
@@ -124,4 +116,4 @@ html, body {
         background-size: cover;
         -webkit-background-size: cover;
     }
-}
+} */
