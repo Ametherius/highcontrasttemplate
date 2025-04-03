@@ -9,106 +9,65 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <nav id="nav" class="navbar navbar-expand-md fixed-top bg-dark"> <!-- Start Navbar-->
-    <div class="container-fluid p-2">
-        <a href="#" class="navbar-brand text-white text-uppercase">High Contrast</a> <!--Navbar logo-->
-        <button class="navbar-toggler border-2 border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-            <i class="fa-solid fa-bars fs-4 text-white"></i> <!--Toggler Icon-->
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbar"> <!--Navlink container-->
-            <ul class="nav nav-pills"> <!--Nav links-->
-                <li class="nav-item">
-                    <a href="#home" class="nav-link text-white">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link text-white">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#services" class="nav-link text-white">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link text-white">Contact</a>
-                </li>
-            </ul> <!--End navlinks-->
-        </div> <!--End Nav container-->
+    <nav class="navbar navbar-expand-md fixed-top bg-dark py-3 ps-2" id="navbar">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-white">Single Page Landing Page</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid h-100" id="fixed"></div>
+    <div class="container-fluid" id="home">
+        <div class="welcome d-flex flex-column justify-content-center align-items-center">
+            <h1 class="text-white title">This is a single page layout</h1>
+            <div class="container-fluid d-flex-justify-content-center">
+                
+            </div>
+        </div>
     </div>
-</nav> <!-- End Navbar-->
 
-
-<div class="scrollspy" data-bs-spy="scroll" data-bs-target="#nav" data-bs-root-margin="0px 0px -40%0"
-data-bs-smooth-scroll="true" tabindex="0"> <!-- Scrollspy start-->
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100 p-0" id="home"> <!-- Home Section-->
-        <h1 class="text-uppercase text-white" id="title">High Contrast</h1>
-        <div class="d-flex justify-content-center">
-            <a href="#pricing" class="btn btn-primary me-2">Sample Button</a>
-            <a href="#contact" class="btn btn-primary ms-2">Sample Button</a>
-        </div>
-    </div> <!--End Home Section-->
-
-    <div class="container-fluid d-flex flex-column border-bottom-3 border-black" id="about"> <!-- About Section-->
-        <div class="container-fluidp-2 my-3"> <!--Title Container-->
-            <h1 class="text-center">Our Company</h1>
-            <hr class="light-hr">
-        </div>
-        <div class="p-2 mb-3">
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum</p>
-        </div>
-        
+     <!-- Start About Section-->
+    <div class="container-fluid text-center bg-dark p-4">
+        <h3 class="text-white p-3">Who We Are</h3>
+        <hr class="dark-hr">
+        <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
     </div> <!-- End About Section-->
 
-    <div class="container-fluid d-flex flex-column bg-dark" id="services"> <!-- Services Section-->
-        <div class="container-fluid p-2 my-3">
-            <h1 class="text-center text-white fw-normal">What We Do</h1>
-            <hr class="dark-hr">
-        </div>
-        <div class="row mb-4">
-            <div class="col-md-4 mb-4 d-flex flex-column">
-                <h4 class="text-center mb-3 text-white">Sample Header</h4>
-                <p class="text-center text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <!-- Start Services Section-->
+    <div class="container-fluid text-center bg-dark-subtle p-4">
+        <h3 class="p-3">Our Services</h3>
+        <hr class="light-hr">
+        <!-- Row Start-->
+        <div class="row g-0 mt-4"> 
+            <div class="col-md-6 pt-4 px-2 text-center">
+                <h1 class="fw-bold mb-3"><i class="fa-solid fa-code"></i></h1>
+                <p>Sample text of one of the services you provide. You can write anything you would like here. You can also put any image background here as well.</p>
             </div>
-            <div class="col-md-4 mb-4 d-flex flex-column">
-                <h4 class="text-center mb-3 text-white">Sample Header</h4>
-                <p class="text-center text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="col-md-6 pt-4 px-2 text-center"> <!-- New Column-->
+                <h1 class="fw-bold mb-3"><i class="fa-solid fa-bicycle"></i></h1>
+                <p>Sample text of another service you provide. You can say anything and everything you want. All of these are capable of being made into images.</p>
             </div>
-            <div class="col-md-4 mb-4 d-flex flex-column">
-                <h4 class="text-center mb-3 text-white">Sample Header</h4>
-                <p class="text-center text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div> <!-- Row End -->
+        <!-- Row Start -->
+        <div class="row g-0">
+            <div class="col-md-6 pt-4 px-2 text-center">
+                <h1 class="fw-bold mb-3"><i class="fa-solid fa-check"></i></h1>
+                <p>Sample text of more services you provide. You can make this an image or you can stick with this style. The choice is yours!</p>
             </div>
-        </div> <!-- End Row-->
-    </div> <!-- End Services Section -->
+            <div class="col-md-6 pt-4 px-2 text-center">
+                <h1 class="fw-bold mb-3"><i class="fa-solid fa-truck"></i></h1>
+                <p>Sample text of the last service you provide. Everything is fully customizable with images or sticking with this format.</p>
+            </div>
+        </div> <!-- Row End -->
+        
+    </div><!-- End Services Section-->
+ 
 
-   <div class="container-fluid d-flex justify-content-center align-items-center vh-100" id="fixed"> <!-- Fixed Image-->
-        <h1 class="text-white" id="title">This is a sample image</h1>
-   </div> 
 
-   <div class="container-fluid d-flex flex-column justify-content-center bg-dark pb-5" id="contact"> <!-- Contact Section-->
-       <div class="container-fluid p-2 my-2"> <!-- Title Section-->
-            <h3 class="text-center text-white fw-normal">Connect With Us</h3>
-            <hr class="dark-hr">
-       </div> <!-- End Title Section-->
-
-       <div class="container-fluid d-flex flex-column justify-content-center">
-            <div class="d-flex justify-content-center">
-                <i class="fa-solid fa-envelope text-white fs-3 me-2 text-left"></i>
-                <p class="text-white">sample@mail.com</p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <i class="fa-solid fa-phone text-white fs-3 me-2"></i>
-                <p class="text-white">1-800-555-1000</p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <i class="fa-brands fa-facebook text-white fs-3 me-2"></i>
-                <p class="text-white">Find us on Facebook</p>
-            </div>
-       </div>
-   </div> <!-- End Contact Section-->
-</div> <!-- End Scroll Content-->
-
-<footer class="container-fluid d-flex justify-content-center p-3">
+<footer class="container-fluid d-flex bg-dark justify-content-center p-3">
     <div class="d-flex justify-content-center">
-        <i class="fa-regular fa-copyright fs-4 mt-1 me-2"></i>
-        <span class="me-1 mt-1" id="year"> </span>
-        <p class="mt-1">Company name</p>
+        <i class="fa-regular text-white fa-copyright fs-4 mt-1 me-2"></i>
+        <span class="me-1 text-white mt-1" id="year"> </span>
+        <p class="mt-1 text-white">Company name</p>
     </div>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

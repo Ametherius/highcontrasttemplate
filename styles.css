@@ -7,113 +7,43 @@ html, body {
     width: 100%;
     font-family: "Rubik", sans-serif;
     color: black;
-    background-image: linear-gradient(to bottom right, #FFFFFF, #7A7A7A);
 }
 
-#home {
-    background-image: url('./images/cool-background.png');
-    background-attachment: fixed, local;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#title {
-    text-shadow: 2px 2px 2px black;
-}
-
-.light-hr {
-    border: none;
-    height: 2px;
-    color: black;
-    background-color: black;
-}
-
-.dark-hr {
-    border: none;
-    border-radius: 50%;
-    height: 2px;
-    color: #FFFFFF;
-    background-color: #FFFFFF;
-}
-
-.card-body {
-    background-color: #464646;
-}
-
-#pricing {
-    background-image: linear-gradient(to bottom right, #FFFFFF, #7a7a7a);
+.navbar {
+    position: relative;
+    z-index: 1;
 }
 
 #fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-image: url('./images/cool-background.png');
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow: scroll;
+    z-index: -1;
 }
 
-.btn-primary {
-    background-color: #7A7A7A;
-    color: #FFF;
-    border: none;
-    box-shadow: 2px 2px 2px black;
-    border-radius: 3px;
+#home {
+    position: relative;
+    min-height: 100vh;
+    margin-top: 200px;
 }
 
-.btn-primary:hover {
-    background-color: black;
-    color: white;
+.title {
+    text-shadow: 2px 2px 2px black;
 }
 
-/* @media (max-width: 768px){
+.dark-hr {
+    border-top: 3px solid white;
+    border-radius: 50%;
+    opacity: 75%;
+}
 
-    #fixed {
-        background-image: url('./images/tabletbg.png');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-    }
-    #home {
-        background-image: url('./images/tabletbg.png');
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        background-size: cover;
-        -webkit-background-size: cover;
-        background-position: center;
-        -webkit-background-position: center;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-    }
-} */
+.light-hr {
+    border-top: 3px solid black;
+    border-radius: 50%;
+    opacity: 80%;
 
-/* @media (max-width: 576px) {
-
-    #home {
-        background-image: url('./images/phonebg.png');
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        background-size: cover;
-        -webkit-background-size: cover;
-        background-position: center;
-        -webkit-background-position: center;
-        background-repeat: no-repeat;
-        -webkit-background-repeat: no-repeat;
-    }
-
-    #fixed {
-        background: url('./images/phonebg.png');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        -webkit-background-size: cover;
-    }
-} */
+}
